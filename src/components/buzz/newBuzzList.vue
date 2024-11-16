@@ -134,7 +134,6 @@ export default {
 			this.queryNewBuzzList()
 		},
 		async queryNewBuzzList() {
-			this.loading = true
 			const buzzListRes = await metaidv2api.getAllPinByPath(
 				this.pageData.currentPage,
 				this.pageData.pageCount,
